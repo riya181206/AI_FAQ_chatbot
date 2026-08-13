@@ -1,1 +1,3 @@
-ECHO is on.
+Flask
+sentence-transformers
+torch
