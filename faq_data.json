@@ -1,0 +1,122 @@
+[
+    {
+        "question": "What are your working hours?",
+        "answer": "Our working hours are Monday to Friday, 9 AM to 6 PM."
+    },
+    {
+        "question": "How can I contact customer support?",
+        "answer": "You can contact customer support through our support email or phone number."
+    },
+    {
+        "question": "How do I reset my password?",
+        "answer": "Click on 'Forgot Password' on the login page and follow the instructions sent to your email."
+    },
+    {
+        "question": "How can I create an account?",
+        "answer": "Click the 'Sign Up' button and enter your name, email address and password."
+    },
+    {
+        "question": "What payment methods do you accept?",
+        "answer": "We accept major debit cards, credit cards and online payment methods."
+    },
+    {
+        "question": "How can I cancel my order?",
+        "answer": "You can cancel your order from your account before it is shipped."
+    },
+    {
+        "question": "How can I track my order?",
+        "answer": "You can track your order from the 'My Orders' section of your account."
+    },
+    {
+        "question": "How long does delivery take?",
+        "answer": "Standard delivery usually takes 3 to 7 business days."
+    },
+    {
+        "question": "What is your refund policy?",
+        "answer": "Refunds are processed according to our return and refund policy."
+    },
+    {
+        "question": "How can I return a product?",
+        "answer": "Go to 'My Orders', select the product and choose the return option."
+    },
+    {
+        "question": "Can I change my account information?",
+        "answer": "Yes, you can update your account information from the profile or account settings section."
+    },
+    {
+        "question": "How do I change my password?",
+        "answer": "Go to your account settings, select the password option, and follow the instructions to create a new password."
+    },
+    {
+        "question": "Can I use a different email for my account?",
+        "answer": "You can update your registered email address from your account settings if the option is available."
+    },
+    {
+        "question": "How do I place an order?",
+        "answer": "Select the product you want, add it to your cart, proceed to checkout, and complete the payment."
+    },
+    {
+        "question": "Can I modify my order after placing it?",
+        "answer": "Order changes may be possible before the order is processed or shipped. Contact customer support for assistance."
+    },
+    {
+        "question": "What should I do if my order is delayed?",
+        "answer": "Check your order tracking information first. If the order remains delayed, contact customer support."
+    },
+    {
+        "question": "What should I do if I receive a damaged product?",
+        "answer": "Contact customer support as soon as possible and provide details or photos of the damaged product."
+    },
+    {
+        "question": "Can I exchange a product?",
+        "answer": "Product exchanges may be available depending on the product and our exchange policy. Contact customer support for details."
+    },
+    {
+        "question": "How long does a refund take?",
+        "answer": "Refund processing time depends on the payment method and may take several business days after approval."
+    },
+    {
+        "question": "Do you offer cash on delivery?",
+        "answer": "Cash on delivery may be available for eligible orders and locations."
+    },
+    {
+        "question": "How can I check my order status?",
+        "answer": "Log in to your account and open the 'My Orders' section to check the current status of your order."
+    },
+    {
+        "question": "Why was my payment declined?",
+        "answer": "A payment can be declined because of insufficient funds, incorrect payment details, bank restrictions, or technical issues."
+    },
+    {
+        "question": "Is my payment information secure?",
+        "answer": "We use appropriate security measures to protect payment and account information."
+    },
+    {
+        "question": "Can I get a refund for a cancelled order?",
+        "answer": "If payment was already completed, an eligible cancelled order may be refunded according to our refund policy."
+    },
+    {
+        "question": "What happens if I forget my account password?",
+        "answer": "Use the 'Forgot Password' option on the login page to reset your password through your registered email."
+    },
+    {
+        "question": "How do I know if my order has been shipped?",
+        "answer": "You can check your order status in the 'My Orders' section. Tracking information may appear after the order is shipped."
+    },
+    {
+        "question": "Do you provide order tracking?",
+        "answer": "Yes, eligible orders can be tracked from the 'My Orders' section of your account."
+    },
+    {
+        "question": "What information do I need to contact support?",
+        "answer": "Provide your name, registered email address, order number if applicable, and a clear description of your issue."
+    },
+    {
+        "question": "Can I contact support about an existing order?",
+        "answer": "Yes, customer support can assist with questions or issues related to existing orders."
+    },
+    {
+        "question": "Where can I find help with my account?",
+        "answer": "You can find account-related help through the support section or contact customer support for assistance."
+    }
+]
