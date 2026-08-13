@@ -1,5 +1,6 @@
 import json
-from sentence_transformers import SentenceTransformer, util
+from sklearn.feature_extraction.text import TfidfVectorizer
+from sklearn.metrics.pairwise import cosine_similarity
 
 
 class FAQChatbot:
@@ -8,13 +9,15 @@ class FAQChatbot:
         with open(data_file, "r", encoding="utf-8") as file:
             self.faqs = json.load(file)
 
-        self.model = SentenceTransformer("all-MiniLM-L6-v2")
-
         self.questions = [faq["question"] for faq in self.faqs]
 
-        self.question_embeddings = self.model.encode(
-            self.questions,
-            convert_to_tensor=True
+        self.vectorizer = TfidfVectorizer(
+            lowercase=True,
+            stop_words="english"
+        )
+
+        self.question_vectors = self.vectorizer.fit_transform(
+            self.questions
         )
 
     def get_answer(self, user_question):
@@ -26,20 +29,21 @@ class FAQChatbot:
         if user_question in greetings:
             return "Hello! 👋 How can I help you today?"
 
-        user_embedding = self.model.encode(
-            user_question,
-            convert_to_tensor=True
-        )
+        user_vector = self.vectorizer.transform([user_question])
 
-        similarities = util.cos_sim(
-            user_embedding,
-            self.question_embeddings
+        similarities = cosine_similarity(
+            user_vector,
+            self.question_vectors
         )[0]
 
-        best_match_index = int(similarities.argmax())
-        best_score = float(similarities[best_match_index])
+        best_match_index = similarities.argmax()
+        best_score = similarities[best_match_index]
 
-        if best_score < 0.40:
-            return "I'm currently designed to answer questions about our services, orders, payments, accounts, and support. Please try asking a related question."
+        if best_score < 0.20:
+            return (
+                "I'm currently designed to answer questions about "
+                "our services, orders, payments, accounts, and support. "
+                "Please try asking a related question."
+            )
 
         return self.faqs[best_match_index]["answer"]
